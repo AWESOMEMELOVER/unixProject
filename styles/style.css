@@ -18,62 +18,15 @@ body{
 .track1{
     position: relative;
     text-align: center;
-    top: 50px;
-    left: 100px;
+    top: 30px;
+    left: 87%;
     width: 100px;
+    height: 100%;
+     display: inline-block;
 }
 
-.track2{
-    position: relative;
-    text-align: center;
-    top: -627px;
-    left: 300px;
-    width: 100px;
-}
-.track3{
-    position:relative;
-    text-align:center;
-    top: -1300px;
-    left: 500px;
-    width: 100px;
-}
 
-.track4{
-    position:relative;
-    text-align: center;
-    top: -1975px;
-    left: 700px;
-    width: 100px;
-}
 
-.trackM{
-    position:relative;
-    text-align: center;
-    top: -3235px;
-    left: 950px;
-    width: 100px;
-}
-
-#Mstr{
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-#mvol{
-    margin-top: 100px;
-}
-
-.divide{
-    position: relative;
-    top: -2575px;
-    left: 900px;
-    height: 580px;
-    width: 10px;
-    border-radius: 10px;
-    background-color: darkcyan;
-    
-}
 
 p.in{
     width: 100px;
@@ -90,174 +43,26 @@ p.in{
 }
 
 
-table {
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 20px;
-}
 
-.toggle {
-    height: 15px;
-    width: 40px;
+
+
+
+.waveform{
+    position: absolute;;
     background-color: black;
+     width: 650px;
+    height: 150px;
+     top: 50%;
+    left: 35%;
+    margin: -125px 0 0 -125px;
 }
-.switch{
-    position:relative;
-    top: 1px;
-    left: 24px;
-    height: 13px;
-    width:15px;
-    background-color: yellow;
+.buttonHolder{
+    position:absolute;
+    bottom:0;right:0;
 }
-
-.switchA{
-    position: relative;
-    top: 1px;
-    left: 1px;
-    height: 13px;
-    width: 15px;
-    background-color: yellow;
+.rollerHolder{
+      display: table-cell;
 }
-
-#kill{
-    height:px;
-    width: 40px;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: yellow;
-}
-.fader{
-    height: 160px;
-    width: 35px;
-    margin: auto;
-    border-radius: 30px;
-    background-color: darkcyan;
-}
-
-/*Slider for Fader Input 2*/
-.thumb{
-    position:relative;
-    top: 25px;
-    left: -15px;
-    height: 30px;
-    width: 65px;
-    background-color: black;
-    z-index: 8;
-}
-
-.index{
-    position:relative;
-    top: 5px;
-    left: -13px;
-    height: 10px;
-    width: 60px;
-    background-color: white;
-    z-index: 9
-}
-
-
-
-.track{
-    position:relative;
-    left: 13px;
-    top:-29px;
-    height: 137px;
-    width: 10px;
-    border-radius:10px;
-    background-color: black;
-    
-}
-
-/*Slider for Fader Input 1*/
-.thumb1{
-    position: relative;
-    top: 60px;
-    left: -15px;
-    height: 30px;
-    width: 65px;
-    background-color: black;
-    z-index: 8;
-}
-
-.index1{
-    position:relative;
-    top: 40px;
-    left: -13px;
-    height: 10px;
-    width: 60px;
-    background-color: white;
-    z-index: 9
-}
-
-/*Slider for Input 3*/
-.thumb3{
-    position: relative;
-    top: 80px;
-    left: -15px;
-    height: 30px;
-    width: 65px;
-    background-color: black;
-    z-index: 8;
-}
-
-.index3{
-    position:relative;
-    top: 60px;
-    left: -13px;
-    height: 10px;
-    width: 60px;
-    background-color: white;
-    z-index: 9
-}
-
-/*Slider for Input 4*/
-
-.thumb4{
-    position: relative;
-    top: 110px;
-    left: -15px;
-    height: 30px;
-    width: 65px;
-    background-color: black;
-    z-index: 8;
-}
-
-.index4{
-    position:relative;
-    top: 90px;
-    left: -13px;
-    height: 10px;
-    width: 60px;
-    background-color: white;
-    z-index: 9
-}
-
-#slider{
-  border-width: 1px;
-  border-style: solid;
-  border-color: #333 #333 #777 #333;
-  border-radius: 25px;
-  width: 100px;
-  position: absolute;
-  height: 13px;
-  background-color: #8e8d8d;
-  box-shadow: inset 0 1px 5px 0px rgba(0, 0, 0, .5), 
-           0 1px 0 0px rgba(250, 250, 250, .5);
-  left: 20px;
-}
-.tooltip {
-  position: absolute;
-  display: block;
-  top: -25px;
-  width: 35px;
-  height: 20px;
-  color: #fff;
-  text-align: center;
-  font: 10pt Tahoma, Arial, sans-serif ;
-  border-radius: 3px;
-  border: 1px solid #333;
-  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, .3);
-  box-sizing: border-box;
-  background: linear-gradient(top, rgba(69,72,77,0.5) 0%,rgba(0,0,0,0.5) 100%);
+.scrollerHolder{
+    margin-top: 30%;
 }

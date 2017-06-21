@@ -6,26 +6,24 @@
 	<title></title>
     
         <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/dark-hive/jquery-ui.css" type="text/css">
-       
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link rel="stylesheet" href="js/circular-slider-master/dist/circular-slider.min.css" />
 
 </head>
 <body>
 	
-    <div class="mixbody">
+    <div class="mixbody" >
         <div class="track1">
-            <p class="in">INPUT 1</p>
-            <p class="sel">HIGH</p>
-            <!--<div class="input1"></div>-->
 
-    <!--High Frequency Pot-->    
-            <div class="roundSlider">
+        <div class ="rollerHolder">
+            <p class="sel">HIGH</p>
+            <div class="roundSlider1">
             </div>
           
     <!--Mid Frequency Pot-->
        
-            <p class="sel">HIGH</p>
+            <p class="sel">MID</p>
             <div class="roundSlider2">
             </div>
            
@@ -33,10 +31,12 @@
          <p class="middle">LOW</p>
              <div class="roundSlider3">
             </div>
+     </div>
            
 
     <!--scroller-->
-             <section>
+            <div class = "scrollerHolder" >
+          <section>
         <p class="middle">CROSS</p>
         <div id="cross"></div> <!-- the Slider -->
             </section>
@@ -45,9 +45,9 @@
         <p class="middle">VOLUME</p>
         <div id="slider2" style="margin: 30px"></div> <!-- the Slider -->
             </section>
-        
-        
-        </div>
+            </div>
+     </div >
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/jquery-1.7.2.min.js"></script>
     <script src="js/jquery-ui-1.8.21.custom.min.js"></script>
     <script src ="js/index.js"></script>
