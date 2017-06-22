@@ -5,6 +5,11 @@ $(function() {
 				min:0,
 				max:100
 			});
+    
+            var cross  = $('#cross2').slider({
+				min:0,
+				max:100
+			});
 
 			var slider2  = $('#slider2').slider({
 				min:0,
@@ -30,5 +35,27 @@ $(function() {
 				max:100,
 				radius:35
 			});		
+    
+            var roundSlider4 = $(".roundSlider4").CircularSlider({
+				min:-100,
+				max:100,
+				radius:35
+			});
+
+			var roundSlider5 = $(".roundSlider5").CircularSlider({
+				min:-100,
+				max:100,
+				radius:35
+			});		
+			
+			var roundSlider6 = $(".roundSlider6").CircularSlider({
+				min:-100,
+				max:100,
+				radius:35
+			});		
+            var myDropzone = new Dropzone("div#my-awesome-dropzone", { url: "/file/post"});       
+    
+        
+    
 
 		});
