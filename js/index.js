@@ -1,9 +1,15 @@
 $(function() {
-
+			 var handle = $( "#custom-handle" );
 			//Store frequently elements in variables
 			var cross  = $('#cross').slider({
 				min:0,
-				max:100
+				max:100,
+				create: function() {
+					handle.text( $( this ).slider( "value" ) );
+      				},
+				slide: function( event, ui ) {
+					handle.text( ui.value );
+					}
 			});
     
             var cross  = $('#cross2').slider({
@@ -13,9 +19,7 @@ $(function() {
 
 			var slider2  = $('#slider2').slider({
 				min:0,
-				max:100,
-				orientation: "vertical"
-
+				max:100
 			});
 
 			var roundSlider1 = $(".roundSlider1").CircularSlider({

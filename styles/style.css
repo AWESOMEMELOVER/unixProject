@@ -30,10 +30,11 @@ body{
     
     position: relative;
     text-align: center;
-    top: -560px;
+    top: -377px;
     left: 49%;
     width: 100px;
     height: 100%;
+	
      display: inline-block;
 
 }
@@ -103,12 +104,27 @@ p.in{
     height: 100px;
 
     position: absolute;
-    top:0;
+    top:8%;
     bottom: 50%;
-    left: 0;
-    right: 20%;
-
+    left: 0%;
+    right: 57%;
+	
     margin: auto;
+	
+}
+
+.topButtonHolder2{
+     width: 600px;
+    height: 100px;
+
+    position: absolute;
+    top:8%;
+    bottom: 50%;
+    left: 55%;
+    right: 50%;
+	
+    margin: auto;
+	
 }
 
 .buttonHolder2{
@@ -117,13 +133,34 @@ p.in{
 
     position: absolute;
     top:0;
-    bottom: -125%;
-    left: 80%;
+    bottom: -30%;
+    left: 58%;
     right: 45%;
 
     margin: auto;
 }
 
+.btn-primary{
+	background:#768d87;
+}
+
+.btn-group-horizontal{
+	margin-left: 20px;
+}
+
+#slider2{
+	width: 25em;
+	top: 100px;
+	right: 200px;
+}
+#custom-handle {
+	width: 3em;
+    height: 1.6em;
+    top: 50%;
+    margin-top: -.8em;
+    text-align: center;
+    line-height: 1.6em;
+	}
 .myButton {
     -moz-box-shadow:inset 0px 1px 3px 0px #91b8b3;
     -webkit-box-shadow:inset 0px 1px 3px 0px #91b8b3;
@@ -171,13 +208,13 @@ p.in{
 }
 
 .dragndrop{
-      width: 600px;
+      width: 100%;
     height: 100px;
     
     position: absolute;
-    top:0;
-    bottom: -50%;
-    left: 5%;
+    top:100%;
+    bottom: 0;
+    left: 0%;
     right: 400%;
     background: #cadbdc;
     margin: auto;
