@@ -1,165 +1,126 @@
-
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-    
-        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/dark-hive/jquery-ui.css" type="text/css">
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
-        <link rel="stylesheet" href="js/circular-slider-master/dist/circular-slider.min.css" />
-
+	<title>online unix dj</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/dark-hive/jquery-ui.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<link rel="stylesheet" href="js/circular-slider-master/dist/circular-slider.min.css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<script src="js/circular-slider-master/dist/circular-slider.min.js"></script>
+	<script src="js/dropzone.js"></script>
+	<script src="js/index.js"></script>
 </head>
 <body>
-	
-    <div class="mixbody" >
-        <div class ="leftDeck">
-        <div class="track1">
-
-        <div class ="rollerHolder">
-            <p class="sel">HIGH</p>
-            <div class="roundSlider1">
-            </div>
-          
-    <!--Mid Frequency Pot-->
-       
-            <p class="sel">MID</p>
-            <div class="roundSlider2">
-            </div>
-           
-    <!--Low Frequency Pot-->
-         <p class="middle">LOW</p>
-             <div class="roundSlider3">
-            </div>
-     </div>
-           
-
-    <!--scroller-->
-            <div class = "scrollerHolder" >
-          <section>
-        <p class="middle">CROSS</p>
-        <div id="cross"></div> <!-- the Slider -->
-            </section>
-
-             
-            </div>
-     </div >
-
-    
-         <div class="waveform">
-         </div>
-         <div class="buttonHolder" >  
-             <a href="#" class="myButton">CUE</a>
-             <a href="#" class="myButton">PLAY</a>
-             <a href="#" class="myButton">MASTER</a>
-             <a href="#" class="myButton">SYNC</a>
-            
-         </div>
-       
-        <div class="topButtonHolder" >  
-            <span class="btn-group-horizontal">
-            <button type="button" class="btn btn-primary" id ="btn-primary">1</button>
-            <button type="button" class="btn btn-primary">2</button>
-            <button type="button" class="btn btn-primary">4</button>
-			<button type="button" class="btn btn-primary">8</button>
-			</span>
-			<span class="btn-group-horizontal">
-            <button type="button" class="btn btn-primary">1</button>
-            <button type="button" class="btn btn-primary">2</button>
-            <button type="button" class="btn btn-primary">4</button>
-			<button type="button" class="btn btn-primary">8</button>
-			</span>
-			<span class="btn-group-horizontal">
-            <button type="button" class="btn btn-primary">1</button>
-            <button type="button" class="btn btn-primary">2</button>
-            <button type="button" class="btn btn-primary">4</button>
-			<button type="button" class="btn btn-primary">8</button>
-			</span>
-         </div>
-        </div>
-        <div class = "rightDeck">
-			 <div class="topButtonHolder2" >  
-            <span class="btn-group-horizontal">
-            <button type="button" class="btn btn-primary" id ="btn-primary">1</button>
-            <button type="button" class="btn btn-primary">2</button>
-            <button type="button" class="btn btn-primary">4</button>
-			<button type="button" class="btn btn-primary">8</button>
-			</span>
-			<span class="btn-group-horizontal">
-            <button type="button" class="btn btn-primary">1</button>
-            <button type="button" class="btn btn-primary">2</button>
-            <button type="button" class="btn btn-primary">4</button>
-			<button type="button" class="btn btn-primary">8</button>
-			</span>
-			<span class="btn-group-horizontal">
-            <button type="button" class="btn btn-primary">1</button>
-            <button type="button" class="btn btn-primary">2</button>
-            <button type="button" class="btn btn-primary">4</button>
-			<button type="button" class="btn btn-primary">8</button>
-			</span>
-         </div>
-			
-			<div class="buttonHolder2" >  
-             <a href="#" class="myButton">CUE</a>
-             <a href="#" class="myButton">PLAY</a>
-             <a href="#" class="myButton">MASTER</a>
-             <a href="#" class="myButton">SYNC</a>
-            
-         </div>
-            <div class="track2">
-
-        <div class ="rollerHolder">
-            <p class="sel">HIGH</p>
-            <div class="roundSlider4">
-            </div>
-          
-    <!--Mid Frequency Pot-->
-       
-            <p class="sel">MID</p>
-            <div class="roundSlider5">
-            </div>
-           
-    <!--Low Frequency Pot-->
-         <p class="middle">LOW</p>
-             <div class="roundSlider6">
-            </div>
-     </div>
-           
-
-    <!--scroller-->
-            <div class = "scrollerHolder" >
-          <section>
-        <p class="middle">CROSS</p>
-        <div id="cross2"></div> <!-- the Slider -->
-			  </section>
-           
-                <section class="volumeHandler">
-        
-        <div id="slider2">
-			<div id="custom-handle" class="ui-slider-handle"></div>
-			</div> <!-- the Slider -->
+<div class="mixbody">
+	<div class="leftDeck">
+		<div class="track1">
+			<div class="rollerHolder">
+				<p class="sel">HIGH</p>
+				<div class="roundSlider1"></div>
+				<!--Mid Frequency Pot-->
+				<p class="sel">MID</p>
+				<div class="roundSlider2"></div>
+				<!--Low Frequency Pot-->
+				<p class="middle">LOW</p>
+				<div class="roundSlider3"></div>
+			</div>
+			<!--scroller-->
+			<div class="scrollerHolder" >
+				<p class="middle">VOLUME</p>
+				<div id="cross"></div>
+			</div>
+		</div >
+		<div class="waveform"></div>
+		<div class="buttonHolder" >  
+			<a href="#" class="myButton">CUE</a>
+			<a href="#" class="myButton">PLAY</a>
+			<a href="#" class="myButton">MASTER</a>
+			<a href="#" class="myButton">SYNC</a>
+		</div>
+		<!-- future -->
+		<!--div class="topButtonHolder" >  
+		<span class="btn-group-horizontal">
+		<button type="button" class="btn btn-primary">1</button>
+		<button type="button" class="btn btn-primary">2</button>
+		<button type="button" class="btn btn-primary">4</button>
+		<button type="button" class="btn btn-primary">8</button>
+		</span>
+		<span class="btn-group-horizontal">
+		<button type="button" class="btn btn-primary">1</button>
+		<button type="button" class="btn btn-primary">2</button>
+		<button type="button" class="btn btn-primary">4</button>
+		<button type="button" class="btn btn-primary">8</button>
+		</span>
+		<span class="btn-group-horizontal">
+		<button type="button" class="btn btn-primary">1</button>
+		<button type="button" class="btn btn-primary">2</button>
+		<button type="button" class="btn btn-primary">4</button>
+		<button type="button" class="btn btn-primary">8</button>
+		</span>
+		</div-->
+	</div>
+	<div class="rightDeck">
+		<!-- future -->
+		<!--div class="topButtonHolder2" >  
+		<span class="btn-group-horizontal">
+		<button type="button" class="btn btn-primary" id ="btn-primary">1</button>
+		<button type="button" class="btn btn-primary">2</button>
+		<button type="button" class="btn btn-primary">4</button>
+		<button type="button" class="btn btn-primary">8</button>
+		</span>
+		<span class="btn-group-horizontal">
+		<button type="button" class="btn btn-primary">1</button>
+		<button type="button" class="btn btn-primary">2</button>
+		<button type="button" class="btn btn-primary">4</button>
+		<button type="button" class="btn btn-primary">8</button>
+		</span>
+		<span class="btn-group-horizontal">
+		<button type="button" class="btn btn-primary">1</button>
+		<button type="button" class="btn btn-primary">2</button>
+		<button type="button" class="btn btn-primary">4</button>
+		<button type="button" class="btn btn-primary">8</button>
+		</span>
+		</div-->
+		<div class="waveform2">
+		</div>
+		<div class="buttonHolder2" >  
+			<a href="#" class="myButton">CUE</a>
+			<a href="#" class="myButton">PLAY</a>
+			<a href="#" class="myButton">MASTER</a>
+			<a href="#" class="myButton">SYNC</a>
+		</div>
+		<div class="track2">
+			<div class="rollerHolder">
+				<p class="sel">HIGH</p>
+				<div class="roundSlider4"></div>
+				<!--Mid Frequency Pot-->
+				<p class="sel">MID</p>
+				<div class="roundSlider5"></div>
+				<!--Low Frequency Pot-->
+				<p class="middle">LOW</p>
+				<div class="roundSlider6"></div>
+			</div>
+			<!--scroller-->
+			<div class="scrollerHolder" >
+				<section>
+				<p class="middle">VOLUME</p>
+				<div id="cross2"></div> <!-- the Slider -->
 				</section>
-            </div>
-				</div>
-				
-                
-    
-            <div class="waveform2">
-                
-         </div>
-			 <div class ="dragndrop">
-            <form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
-        </div>
-            
-        </div>
-     </div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/jquery-1.7.2.min.js"></script>
-    <script src="js/jquery-ui-1.8.21.custom.min.js"></script>
-    <script src ="js/index.js"></script>
-    <script src="js/circular-slider-master/dist/circular-slider.min.js"></script>
-    <script src="js/dropzone.js"></script>
-    
+			</div>
+		</div>
+	</div>
+</div>
+ <!-- the crossfade -->
+<!--div class="scrollerHolder" >
+	<div id="slider2">
+	<div id="custom-handle" class="ui-slider-handle"></div>
+	</div>
+</div-->
+<div class="dragndrop">
+<form action="/file-upload" class="dropzone" id="my-awesome-dropzone"></form>
+</div>
 </body>
 </html>
